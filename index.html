@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖼 Modern Image Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="imageTitle">
+    <span>I</span><span>m</span><span>a</span><span>g</span><span>e</span> 
+    <span>V</span><span>i</span><span>e</span><span>w</span><span>e</span><span>r</span>
+</div>
+        
+        <div class="image-container" id="imageContainer">
+            <img id="displayedImage" style="display: none;">
+        </div>
+        
+        <div class="controls">
+            <button  id="openFolder">Open Folder</button>
+            <button id="prevImage">Previous</button>
+            <button id="nextImage">Next</button>
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+            <button id="startSlideshow">Start Slide</button>
+            <button id="stopSlideshow">Stop Slide</button>
+            <button id="toggleFullscreen">Fullscreen</button>
+            <button id="exitButton">Exit</button>
+        </div>
+        
+          <input type="file" id="fileInput" class="file-input" webkitdirectory directory multiple>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
